@@ -43,10 +43,12 @@ opening a `raw.githubusercontent.com` URL in Chrome shows the source as text rat
 than rendering it; the file must be saved locally first.
 
 **For a shareable `https://` URL:** a second copy is committed at `docs/index.html`.
-Enable GitHub Pages under **Settings → Pages → Deploy from a branch**, choosing
-`arena/38c48503-smartbryte` and `/docs`. On this public repository that publishes the
-preview at `https://beewrld.github.io/Smartbryte/`. Pages is **not** enabled yet —
-repository settings were left untouched.
+Enable GitHub Pages at
+<https://github.com/Beewrld/Smartbryte/settings/pages> — **Deploy from a branch**,
+choose `arena/38c48503-smartbryte` and `/docs`, then Save. That publishes the preview
+at `https://beewrld.github.io/Smartbryte/`. Pages is **not** enabled yet because
+repository settings are outside this session's GitHub permissions; see
+[PREVIEW.md](PREVIEW.md#4-github-pages--a-native-shareable-https-url-one-time-setup).
 
 Regenerate both files after any design change with:
 
