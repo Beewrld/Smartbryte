@@ -5,6 +5,17 @@ implementation of the **SmartBryte – Lovable Homepage Master Prompt** brief: t
 controls the product scope, architecture and every word of copy; the attached design
 images and the two Markdown design-system files guide the visual direction.
 
+## 👀 See the design
+
+**[PREVIEW.md](PREVIEW.md) lists every preview option.** The quickest one needs nothing
+but this GitHub page — here is the full desktop homepage:
+
+![SmartBryte homepage — full desktop preview](preview/desktop.png)
+
+Also available: [tablet](preview/tablet.png) · [mobile](preview/mobile.png) ·
+[full-page PDF](preview/smartbryte-homepage.pdf) ·
+[standalone offline HTML for Chrome](smartbryte-preview.html).
+
 ## Run it
 
 ```bash
