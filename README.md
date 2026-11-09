@@ -29,17 +29,22 @@ photographs are embedded as data URIs, so there are no external requests at all.
 
 The responsive layouts and the mobile menu work in the standalone file too. Note that
 opening a `raw.githubusercontent.com` URL in Chrome shows the source as text rather
-than rendering it; the file must be saved locally first. GitHub Pages (or any static
-host) is the next step if you want a shareable URL after reviewing.
+than rendering it; the file must be saved locally first.
 
-Regenerate after any design change with:
+**For a shareable `https://` URL:** a second copy is committed at `docs/index.html`.
+Enable GitHub Pages under **Settings → Pages → Deploy from a branch**, choosing
+`arena/38c48503-smartbryte` and `/docs`. On this public repository that publishes the
+preview at `https://beewrld.github.io/Smartbryte/`. Pages is **not** enabled yet —
+repository settings were left untouched.
+
+Regenerate both files after any design change with:
 
 ```bash
 npm run build:preview
 ```
 
-It is generated from the same `App.tsx`, `content.ts` and `styles.css` as the app, so
-the preview cannot drift away from the real page.
+The preview is generated from the same `App.tsx`, `content.ts` and `styles.css` as the
+app, so it cannot drift away from the real page.
 
 ## Design synthesis
 
