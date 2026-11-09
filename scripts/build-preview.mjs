@@ -132,4 +132,13 @@ ${markup}
 
 const out = path.join(root, 'smartbryte-preview.html')
 await writeFile(out, html)
-console.log(`Wrote ${out} (${(Buffer.byteLength(html) / 1024).toFixed(0)} KB, fully offline)`)
+
+/* The same file doubles as a GitHub Pages preview at /docs/index.html, so a
+   public https:// URL can open it in Chrome without downloading anything. */
+const docs = path.join(root, 'docs')
+await mkdir(docs, { recursive: true })
+await writeFile(path.join(docs, 'index.html'), html)
+
+console.log(
+  `Wrote ${out} and docs/index.html (${(Buffer.byteLength(html) / 1024).toFixed(0)} KB each, fully offline)`,
+)
