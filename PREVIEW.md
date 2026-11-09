@@ -60,17 +60,23 @@ it. They only read the already-public file, but they are third-party services.
 
 ---
 
-## 4. GitHub Pages — a native, shareable `https://` URL
+## 4. GitHub Pages — a native, shareable `https://` URL (one-time setup)
 
-A ready-to-serve copy is committed at `docs/index.html`. The
-`.github/workflows/pages.yml` workflow tries to enable Pages automatically and deploy
-`docs/` on every push to this branch. Once it succeeds, the live preview is:
+A ready-to-serve copy is committed at `docs/index.html`. Pages is **not enabled yet**,
+because the GitHub connection used for this work can push code but is not allowed to
+change repository settings (`403 Resource not accessible by integration`). Only a repo
+admin can flip that switch — it takes about 15 seconds:
+
+1. Open **<https://github.com/Beewrld/Smartbryte/settings/pages>**
+2. Under **Build and deployment → Source**, choose **Deploy from a branch**
+3. Branch: `arena/38c48503-smartbryte` · Folder: **`/docs`** · **Save**
+
+Your live preview is then:
 
 **<https://beewrld.github.io/Smartbryte/>**
 
-If your repository settings block that, enable it manually — **Settings → Pages →
-Build and deployment → Deploy from a branch →** branch `arena/38c48503-smartbryte`,
-folder `/docs`, then **Save**. The same URL becomes live within a minute or two.
+(GitHub builds it within a minute or two. If you'd rather keep `main` clean, this uses
+only the preview branch and can be turned off in the same settings page.)
 
 ---
 
