@@ -16,6 +16,31 @@ npm run preview    # serve the production build
 
 No backend, database, authentication, payments, dashboards or additional pages.
 
+## Preview it in Chrome (no build required)
+
+**`smartbryte-preview.html`** at the repository root is a single, self-contained
+snapshot of the finished homepage. The stylesheet, both variable fonts and all three
+photographs are embedded as data URIs, so there are no external requests at all.
+
+1. Download `smartbryte-preview.html` from GitHub (use **Download raw file** on the
+   file page, or save the raw view as `.html`).
+2. Double-click it — Chrome opens it directly via `file://` with no server, no
+   `npm install` and no internet connection.
+
+The responsive layouts and the mobile menu work in the standalone file too. Note that
+opening a `raw.githubusercontent.com` URL in Chrome shows the source as text rather
+than rendering it; the file must be saved locally first. GitHub Pages (or any static
+host) is the next step if you want a shareable URL after reviewing.
+
+Regenerate after any design change with:
+
+```bash
+npm run build:preview
+```
+
+It is generated from the same `App.tsx`, `content.ts` and `styles.css` as the app, so
+the preview cannot drift away from the real page.
+
 ## Design synthesis
 
 The page is **warm editorial education** — one coherent system rather than a copy of
